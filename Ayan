@@ -12,4 +12,29 @@
 11)Make sure that Rollback of SR should be failed because already added user was deleted manually.
 12)Make sure that add user task should retry the rollback in Rollback SR after it got failed as per add user task retry count.
 13)Make sure Rollback should be completed after retried the add user rollback action."
-sztydxvgk.j
+"1)Make sure we should be logged into UCSD as Admin
+2)Make sure that Compound WF with Add User task mapped with user input should be Created.
+3)Make sure that Retry Execution should be enabled with Retry Count as ""5"" & Its Frequency as ""300 Seconds"" in Add User Task in Compound WF.
+4)Make sure that WF with Compound Task having Add User task should be Created.
+5)Make sure that Workflow with Compound Task having  Add User task should be validated & executed.
+6)Make sure that WF with Compound Task having  Add User task execution should be failed because adding user should be existing already.
+7)Make sure that Add User tasks should be re-executed as per retry count & as per frequency after add user task got failed.
+8)Make sure that Users should be deleted maually before re-executing the add user task while executing the WF.
+9)Make sure that WF execution should be completed without any issues after re-execute the add user task
+10)Make sure that Service Request should be selected & Rollback the SR.
+11)Make sure that Rollback of SR should be failed because already added user was deleted manually.
+12)Make sure that add user task should retry the rollback in Rollback SR after it got failed as per add user task retry count.
+13)Make sure Rollback should be completed after retried the add user rollback action."
+"1)Make sure we should be logged into UCSD as Admin
+2)Make sure that Compound WF with Add User task mapped with user input should be Created.
+3)Make sure that Retry Execution should be enabled with Retry Count as ""5"" & Its Frequency as ""300 Seconds"" in Add User Task in Compound WF.
+4)Make sure that WF with Compound Task having Add User task should be Created.
+5)Make sure that Workflow with Compound Task having  Add User task should be validated & executed.
+6)Make sure that WF with Compound Task having  Add User task execution should be failed because adding user should be existing already.
+7)Make sure that Add User tasks should be re-executed as per retry count & as per frequency after add user task got failed.
+8)Make sure that Users should be deleted maually before re-executing the add user task while executing the WF.
+9)Make sure that WF execution should be completed without any issues after re-execute the add user task
+10)Make sure that Service Request should be selected & Rollback the SR.
+11)Make sure that Rollback of SR should be failed because already added user was deleted manually.
+12)Make sure that add user task should retry the rollback in Rollback SR after it got failed as per add user task retry count.
+13)Make sure Rollback should be completed after retried the add user rollback action."
