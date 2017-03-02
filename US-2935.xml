@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFAutomation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../properties/StartupXMLSchema.xsd">
+   <ServerData />
+   <Mail />
+   <WFTest>
+      <TCGlobalParams>
+         <singleProcess>false</singleProcess>
+         <waitForCompletion>10800000</waitForCompletion>
+         <logLevels>0,1,2,3</logLevels>
+         <user>admin</user>
+      </TCGlobalParams>
+      <TestSet group="Orchestration">
+         <TestCase>
+            <testName>Orchestration</testName>
+            <wfdxfile>Rollback-Retry-Settings-Create-WF-Enable-Retry-Setting-Option-InTaskInput.wfdx</wfdxfile>
+            <wfname>Rollback-Retry-Settings-Create-WF-Enable-Retry-Setting-Option-InTaskInput</wfname>
+            <rollback>true</rollback>
+            <user>admin</user>
+            <validator>
+               <actionfw>
+                  <actiontest>Delete-RetryUser</actiontest>
+                  <actiontest>Delete-RetryUser.verify</actiontest>
+               </actionfw>
+            </validator>
+            <rollbackValidator>
+               <searchLogMsg>
+                  <message>Will execute attempt # 1 after delay of 30 seconds</message>
+                  <wholeWord>true</wholeWord>
+               </searchLogMsg>
+			   <searchLogMsg>
+                  <message>Will execute attempt # 2 after delay of 30 seconds</message>
+                  <wholeWord>true</wholeWord>
+               </searchLogMsg>
+            </rollbackValidator>
+         </TestCase>
+      </TestSet>
+   </WFTest>
+</WFAutomation>
+
